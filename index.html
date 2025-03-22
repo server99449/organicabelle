@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orgenicabelle</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="description" content="Bootstrap 5 Landing Page HTML CSS Template">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body class="bg-body" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <title>Search</title>
+        <path fill="currentColor" d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="navbar-icon" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M4 7h3m13 0h-9m9 10h-3M4 17h9m-9-5h16" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 256 256">
+        <path fill="currentColor" d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="balloon" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+          <path d="M8 16.607c1.15.86 2.518 1.38 4 1.393c4.142.034 7.594-3.92 7.56-8.196C19.527 5.53 16.142 2.034 12 2c-4.142-.034-7.473 3.404-7.44 7.68A8.88 8.88 0 0 0 5.244 13" />
+          <path d="M15.5 9a3.035 3.035 0 0 0-3-3M12 20.35c.321 0 .482 0 .593-.022c.654-.128 1.051-.772.858-1.39c-.033-.105-.109-.242-.261-.515M12 20.35c-.321 0-.482 0-.593-.022c-.654-.128-1.051-.772-.858-1.39c.033-.105.109-.242.261-.515M12 20.35v2.15" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="bag-heart" viewBox="0 0 24 24">
+        <g fill="none">
+          <path fill="currentColor" d="m12 12.191l-.519.542a.75.75 0 0 0 1.038 0L12 12.191Zm-.957 3.675l-.444.604l.444-.604Zm1.914 0l-.444-.605l.444.605Zm-.957.462v.75v-.75Zm-.514-1.067c-.417-.307-.878-.69-1.227-1.093c-.368-.426-.509-.757-.509-.971h-1.5c0 .77.441 1.45.875 1.952c.453.525 1.014.984 1.474 1.321l.887-1.21ZM9.75 13.197c0-.576.263-.827.492-.907c.25-.088.714-.06 1.24.443l1.037-1.083c-.825-.79-1.861-1.096-2.773-.776c-.934.327-1.496 1.226-1.496 2.323h1.5Zm3.65 3.273c.46-.337 1.022-.796 1.475-1.32c.434-.502.875-1.183.875-1.953h-1.5c0 .214-.141.545-.51.971c-.348.403-.809.786-1.226 1.093l.887 1.21Zm2.35-3.273c0-1.097-.563-1.996-1.496-2.323c-.912-.32-1.948-.014-2.773.776l1.038 1.083c.525-.503.989-.531 1.24-.443c.228.08.491.33.491.907h1.5ZM10.6 16.47c.368.27.782.608 1.4.608v-1.5c-.024 0-.04 0-.094-.03a4 4 0 0 1-.42-.287l-.887 1.21Zm1.914-1.21a4 4 0 0 1-.42.289c-.054.029-.07.029-.094.029v1.5c.618 0 1.032-.337 1.4-.608l-.886-1.21Z" />
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1m5.224 6.526c-.586-3.121-.878-4.682-1.99-5.604C17.125 6 15.537 6 12.36 6h-.72c-3.176 0-4.764 0-5.875.922c-1.11.922-1.403 2.483-1.989 5.604c-.823 4.389-1.234 6.583-.034 8.029C4.942 22 7.174 22 11.639 22h.722c4.465 0 6.698 0 7.897-1.445c.696-.84.85-1.93.696-3.555" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="handiplast" viewBox="0 0 24 24">
+        <g fill="none">
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M13.5 7.642L9.071 3.213a4.142 4.142 0 0 0-5.858 5.858L14.93 20.787a4.142 4.142 0 0 0 5.858-5.858l-4.358-4.358" />
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m12 17.858l-2.929 2.929A4.142 4.142 0 0 1 2.596 20m3.546-8l-2.929 2.929c-.322.322-.58.685-.774 1.071M12 6.142l2.929-2.929a4.142 4.142 0 1 1 5.858 5.858L17.857 12" />
+          <path fill="currentColor" d="M15.841 12.871a.788.788 0 1 1-1.114 1.114a.788.788 0 0 1 1.114-1.114Zm-3.712-3.712a.787.787 0 1 0-1.114 1.114a.787.787 0 0 0 1.114-1.114Zm4.641 6.497a.787.787 0 1 1-1.114 1.114a.787.787 0 0 1 1.114-1.114ZM9.345 8.23A.788.788 0 1 0 8.23 9.346A.788.788 0 0 0 9.345 8.23Zm3.712 3.713a.787.787 0 1 1-1.113 1.114a.787.787 0 0 1 1.113-1.114Zm.928 2.785a.788.788 0 1 1-1.114 1.113a.788.788 0 0 1 1.114-1.113Zm-3.712-3.713a.787.787 0 1 0-1.114 1.114a.787.787 0 0 0 1.114-1.114Z" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="play" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M7 28a1 1 0 0 1-1-1V5a1 1 0 0 1 1.482-.876l20 11a1 1 0 0 1 0 1.752l-20 11A1 1 0 0 1 7 28ZM8 6.69v18.62L24.925 16Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="truck" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+          <path stroke-linejoin="round" stroke-miterlimit="1.5" d="M8 19a2 2 0 1 0 0-4a2 2 0 0 0 0 4Zm10 0a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+          <path d="M10.05 17H15V6.6a.6.6 0 0 0-.6-.6H1m4.65 11H3.6a.6.6 0 0 1-.6-.6v-4.9" />
+          <path stroke-linejoin="round" d="M2 9h4" />
+          <path d="M15 9h5.61a.6.6 0 0 1 .548.356l1.79 4.028a.6.6 0 0 1 .052.243V16.4a.6.6 0 0 1-.6.6h-1.9M15 17h1" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M5 7c-.55 0-1 .45-1 1s.45 1 1 1h2.219l2.625 10.5c.222.89 1.02 1.5 1.937 1.5H23.25c.902 0 1.668-.598 1.906-1.469L27.75 10H11l.5 2h13.656l-1.906 7H11.781L9.156 8.5A1.983 1.983 0 0 0 7.22 7zm17 14c-1.645 0-3 1.355-3 3s1.355 3 3 3s3-1.355 3-3s-1.355-3-3-3zm-9 0c-1.645 0-3 1.355-3 3s1.355 3 3 3s3-1.355 3-3s-1.355-3-3-3zm0 2c.563 0 1 .438 1 1c0 .563-.438 1-1 1c-.563 0-1-.438-1-1c0-.563.438-1 1-1zm9 0c.563 0 1 .438 1 1c0 .563-.438 1-1 1c-.563 0-1-.438-1-1c0-.563.438-1 1-1z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="package" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M3.75 3.75A3.75 3.75 0 0 1 7.5 0c1.455 0 3.436.901 4.5 3.11C13.064.901 15.044 0 16.5 0a3.75 3.75 0 0 1 3 6h1.75c.966 0 1.75.784 1.75 1.75v2.5c0 .698-.409 1.301-1 1.582v8.418A1.75 1.75 0 0 1 20.25 22H3.75A1.75 1.75 0 0 1 2 20.25v-8.418c-.591-.282-1-.884-1-1.582v-2.5C1 6.784 1.784 6 2.75 6H4.5a3.733 3.733 0 0 1-.75-2.25ZM20.5 12h-7.75v8.5h7.5a.25.25 0 0 0 .25-.25Zm-9.25 8.5V12H3.5v8.25c0 .138.112.25.25.25Zm10-10a.25.25 0 0 0 .25-.25v-2.5a.25.25 0 0 0-.25-.25h-8.5v3Zm-18.5 0h8.5v-3h-8.5a.25.25 0 0 0-.25.25v2.5c0 .138.112.25.25.25Zm16-6.75A2.25 2.25 0 0 0 16.5 1.5c-1.15 0-3.433 1.007-3.72 4.5h3.72a2.25 2.25 0 0 0 2.25-2.25ZM11.22 6c-.287-3.493-2.57-4.5-3.72-4.5a2.25 2.25 0 1 0 0 4.5Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="return" viewBox="0 0 14 14">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M.5 7A6.5 6.5 0 1 0 7 .5a7.23 7.23 0 0 0-5 2" />
+          <path d="m2.5.5l-.5 2L4 3m3 .5v4L4.4 8.8" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="send" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M26.07 3.996a2.974 2.974 0 0 0-.933.223h-.004c-.285.113-1.64.683-3.7 1.547l-7.382 3.109c-5.297 2.23-10.504 4.426-10.504 4.426l.062-.024s-.359.118-.734.375a2.03 2.03 0 0 0-.586.567c-.184.27-.332.683-.277 1.11c.09.722.558 1.155.894 1.394c.34.242.664.355.664.355h.008l4.883 1.645c.219.703 1.488 4.875 1.793 5.836c.18.574.355.933.574 1.207c.106.14.23.257.379.351a1.119 1.119 0 0 0 .246.106l-.05-.012c.015.004.027.016.038.02c.04.011.067.015.118.023c.773.234 1.394-.246 1.394-.246l.035-.028l2.883-2.625l4.832 3.707l.11.047c1.007.442 2.027.196 2.566-.238c.543-.437.754-.996.754-.996l.035-.09l3.734-19.129c.106-.472.133-.914.016-1.343a1.807 1.807 0 0 0-.781-1.047a1.872 1.872 0 0 0-1.067-.27zm-.101 2.05c-.004.063.008.056-.02.177v.011l-3.699 18.93c-.016.027-.043.086-.117.145c-.078.062-.14.101-.465-.028l-5.91-4.531l-3.57 3.254l.75-4.79l9.656-9c.398-.37.265-.448.265-.448c.028-.454-.601-.133-.601-.133l-12.176 7.543l-.004-.02l-5.836-1.965v-.004l-.015-.003a.27.27 0 0 0 .03-.012l.032-.016l.031-.011s5.211-2.196 10.508-4.426c2.652-1.117 5.324-2.242 7.379-3.11a807.312 807.312 0 0 1 3.66-1.53c.082-.032.043-.032.102-.032z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="facebook" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="twitter" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="linkedin" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="youtube" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12.244 4c.534.003 1.87.016 3.29.073l.504.022c1.429.067 2.857.183 3.566.38c.945.266 1.687 1.04 1.938 2.022c.4 1.56.45 4.602.456 5.339l.001.152v.174c-.007.737-.057 3.78-.457 5.339c-.254.985-.997 1.76-1.938 2.022c-.709.197-2.137.313-3.566.38l-.504.023c-1.42.056-2.756.07-3.29.072l-.235.001h-.255c-1.13-.007-5.856-.058-7.36-.476c-.944-.266-1.687-1.04-1.938-2.022c-.4-1.56-.45-4.602-.456-5.339v-.326c.006-.737.056-3.78.456-5.339c.254-.985.997-1.76 1.939-2.021c1.503-.419 6.23-.47 7.36-.476h.489ZM9.999 8.5v7l6-3.5l-6-3.5Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="star-fill" viewBox="0 0 16 16">
+        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="star-empty" viewBox="0 0 16 16">
+        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M19 12.998H5v-2h14z" />
+      </symbol>
+    </svg>
+    <header id="header" class="site-header text-black mb-5 fixed-top">
+      <nav id="header-nav" class="navbar navbar-expand-lg pt-3">
+        <div class="container-lg border-bottom pb-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/mainlogo.svg" class="logo">
+          </a>
+          <button class="navbar-toggler d-flex d-lg-none order-3 p-2 border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="navbar-icon" width="50" height="50">
+              <use xlink:href="#navbar-icon"></use>
+            </svg>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+            <div class="offcanvas-header px-4 pb-0">
+              <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 gap-5 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" href="intro">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-us1">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-us">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#video-player">Video</a>
+                </li>
+                
+                <!--
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonial-grid">Reviews</a>
+                </li>
+              
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#method">How to</a>
+                </li>
+                -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#product-detail">Order</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="intro" class="py-lg-9">
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-6">
+            <div class="image-holder me-5">
+              <img src="images/logos.png" alt="banner" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="banner-content">
+              <h1 class="display-2">Ultimate Orgenicabelle Skincare Soaps</h1>
+<p>Experience the power of our Aloe Vera, Neem, and Charcoal Soaps, crafted to rejuvenate and enhance your skin’s natural radiance. Let nature’s finest ingredients nourish, cleanse, and refresh your skin with every use.</p>
+              <a href="shop.html" class="btn btn-lg btn-outline-dark btn-bg-primary text-uppercase mt-3 rounded-pill">
+                <span class="text-uppercase">Enquiry Now</span>
+                <svg class="arrow-right" width="20" height="20">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about-us1" style="background-image: url(images/pattern-bg.png); background-repeat: no-repeat; background-position: center; width: 100%; height: auto;">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="display-header mb-5">
+              <h2 class="display-4 m-0 pb-4">Meet the Founder: Ruchi Sinha</h2>
+<p>Ruchi Sinha, the visionary behind Orgenicabelle, started this venture with a mission to provide high-quality, chemical-free skincare soaps for better skin health. Her dedication to purity and excellence has helped Orgenicabelle grow to over 3,000 customers, with Aloe Vera Charcoal Soap becoming the most in-demand product. With a strong vision to establish Orgenicabelle as a leading skincare brand, Ruchi is also committed to empowering women by creating job opportunities in soap-making factories, fostering both economic growth and sustainable skincare solutions.</p>
+          </div>
+        
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="video-player" class="video overflow-hidden py-lg-9">
+      <div class="container-lg">
+        <div class="row">
+          <div class="video-content">
+            <div class="video-bg position-relative">
+              <img src="images/video-item.jpg" alt="video" class="img-fluid rounded-5">
+              <div class="player position-absolute d-flex justify-content-center align-items-center">
+                <a class='youtube play-btn d-flex justify-content-center align-items-center bg-white-trans rounded-pill' href="https://www.youtube.com/embed/2-iXtcRv5Ts">
+                  <svg class="play" width="32" height="42">
+                    <use xlink:href="#play"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about-us" style="background-image: url(images/pattern-bg.png); background-repeat: no-repeat; background-position: center; width: 100%; height: auto;">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="display-header mb-5">
+              <h2 class="display-4 m-0 pb-4">Product Overview</h2>
+<p>Welcome to the luxurious world of Orgenicabelle. Our skincare soaps are crafted with natural ingredients to nourish, hydrate, and rejuvenate your skin. Infused with the goodness of nature, each soap gently cleanses while promoting a radiant and healthy complexion.
+
+  We offer a range of skin-loving soaps, including Aloe Vera Soap, Neem Soap, and Charcoal Soap, along with many more to suit your skincare needs. Experience the purity of nature in every lather and let your skin glow with timeless beauty.</p>            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="icon-box-wrapper">
+              <ul class="list-unstyled">
+                <li class="icon-box d-flex">
+                  <div class="icon-box-icon me-3">
+                    <svg class="balloon svg-secondary" width="39" height="39">
+                      <use xlink:href="#balloon"></use>
+                    </svg>
+                  </div>
+                  <div class="icon-content">
+                    <h4 class="fs-3">Rejuvenate Your Skin:</h4>
+                    <p>Our Aloe Vera Skincare Soap nourishes and hydrates your skin, promoting collagen production and improving blood circulation to reduce the appearance of fine lines, wrinkles, and uneven skin tone..</p>
+                  </div>
+                </li>
+                <li class="icon-box d-flex">
+                  <div class="icon-box-icon me-3">
+                    <svg class="bag-heart svg-secondary" width="39" height="39">
+                      <use xlink:href="#bag-heart"></use>
+                    </svg>
+                  </div>
+                  <div class="icon-content">
+                    <h4 class="fs-3">Enhance Skincare Absorption: </h4>
+<p>Infused with natural aloe vera, this soap deeply cleanses while allowing your skin to absorb essential nutrients, leaving it soft, refreshed, and radiant.</p>                  </div>
+                </li>
+                <li class="icon-box d-flex">
+                  <div class="icon-box-icon me-3">
+                    <svg class="handiplast svg-secondary" width="39" height="39">
+                      <use xlink:href="#handiplast"></use>
+                    </svg>
+                  </div>
+                  <div class="icon-content">
+                    <h4 class="fs-3">Boost Your Skin’s Natural Glow: </h4>
+<p>With every wash, our Aloe Vera Skincare Soap gently exfoliates and revitalizes your skin, giving you a smoother, healthier, and more luminous complexion.</p>>                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+    <section id="testimonial-grid">
+      <div class="container-lg">
+        <div class="display-header text-center">
+          <h2 class="display-4">Our Customer’s Reviews</h2>
+        </div>
+        <div class="row g-0">
+          <div class="col-lg-4 col-md-6">
+            <blockquote class="p-5 border m-0">
+              <p>"I've been using the women's skin roller for a few weeks now, and I'm amazed at the difference it has made in my skin. My complexion looks more vibrant, and my fine lines are less noticeable. It has become an essential part of my skincare routine!"</p>
+              <div class="author-detail">
+                <div class="rating">
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                </div>
+                <div class="author-name fw-bold">David T - Feb 13, 2023</div>
+              </div>
+            </blockquote>
+            <blockquote class="p-5 border m-0">
+              <p>"I love how the skin roller enhances the absorption of my serums and moisturizers. I feel like my skincare products are working even better now. Plus, the roller feels so soothing and relaxing on my skin. Highly recommend!"</p>
+              <div class="author-detail">
+                <div class="rating">
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                </div>
+                <div class="author-name fw-bold">Emma Turner - Feb 22, 2023</div>
+              </div>
+            </blockquote>
+            <blockquote class="p-5 border m-0">
+              <p>"I've tried various skincare products, but the women's skin roller has taken my routine to a whole new level. It not only improves the absorption of my serums but also provides a relaxing and soothing experience. Rolling it over my face has become my favorite part of self-care, and my skin thanks me for it."</p>
+              <div class="author-detail">
+                <div class="rating">
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                </div>
+                <div class="author-name fw-bold">Rachel H - Feb 27, 2023</div>
+              </div>
+            </blockquote>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <blockquote class="p-5 border m-0">
+              <p>"I have struggled with uneven skin texture and acne scars for years, but since incorporating the women's skin roller into my routine, I have noticed a significant improvement. My skin feels smoother, and the scars have faded. This roller has become my secret weapon for achieving flawless skin."</p>
+              <div class="author-detail">
+                <div class="rating">
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-empty svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-empty" />
+                  </svg>
+                </div>
+                <div class="author-name fw-bold">Michelle W - March 11, 2023</div>
+              </div>
+            </blockquote>
+            <blockquote class="p-5 border m-0">
+              <p>"I was skeptical at first, but after using the women's skin roller consistently, I am blown away by the transformation of my skin. The fine lines around my eyes have softened, and my complexion is brighter. It has truly surpassed my expectations, and I can't imagine my skincare routine without it."</p>
+              <div class="author-detail">
+                <div class="author-name fw-bold">Ethan Sullivan - March 25, 2023</div>
+                <div class="rating">
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                </div>
+              </div>
+            </blockquote>
+            <blockquote class="p-5 border m-0">
+              <p>"Having struggled with puffiness and dark circles under my eyes, the women's skin roller has been a game-changer. I love using it in the morning to reduce morning puffiness and feel refreshed. It's like a mini spa treatment that I can do at home. I'm obsessed!"</p>
+              <div class="author-detail">
+                <div class="author-name fw-bold">Natalie B - April 2, 2023</div>
+                <div class="rating">
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <blockquote class="p-5 border m-0">
+              <p>"As a busy professional, I appreciate the convenience of the women's skin roller. It only takes a few minutes each day, but the results are incredible. My skin looks refreshed and rejuvenated, and I feel more confident than ever. This roller is a must-have for any woman on-the-go."</p>
+              <div class="author-detail">
+                <div class="rating">
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                </div>
+                <div class="author-name fw-bold">Olivia S - April 7, 2023</div>
+              </div>
+            </blockquote>
+            <blockquote class="p-5 border m-0">
+              <p>"After using the skin roller for a while, I can see a visible improvement in my skin's texture and firmness. It's a game-changer! I feel more confident in my own skin. Thank you!"</p>
+              <div class="author-detail">
+                <div class="rating">
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                </div>
+                <div class="author-name fw-bold">Sophia D - April 13, 2023</div>
+              </div>
+            </blockquote>
+            <blockquote class="p-5 border m-0">
+              <p>"I'm in my 40s, and taking care of my skin is a top priority. The women's skin roller has become my secret weapon against aging. It has visibly improved the firmness and elasticity of my skin, giving me a more youthful appearance. I can confidently say that this roller has helped me age gracefully."</p>
+              <div class="author-detail">
+                <div class="rating">
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                  <svg class="star-fill svg-yellow" width="15" height="15">
+                    <use xlink:href="#star-fill" />
+                  </svg>
+                </div>
+                <div class="author-name fw-bold">Lisa M - April 15, 2023</div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="method" class="py-lg-9">
+      <div class="container-lg">
+        <div class="row justify-content-between">
+          <div class="col-lg-6 mb-5">
+            <div class="display-header">
+              <h2 class="display-4">How to use Roller</h2>
+            </div>
+            <ul class="list-unstyled">
+              <li>
+                <div class="step-title fs-3 fw-medium">Step 1</div>
+                <p>Cleanse your face and pat it dry.</p>
+              </li>
+              <li>
+                <div class="step-title fs-3 fw-medium">Step 2</div>
+                <p>Gently roll the skin roller over your face and neck, using light pressure and upward strokes.</p>
+              </li>
+              <li>
+                <div class="step-title fs-3 fw-medium">Step 3</div>
+                <p>Pay extra attention to areas of concern, such as fine lines, wrinkles, and under-eye bags.</p>
+              </li>
+              <li>
+                <div class="step-title fs-3 fw-medium">Step 4</div>
+                <p>Apply your favorite skincare products immediately after rolling to maximize absorption.</p>
+              </li>
+              <li>
+                <div class="step-title fs-3 fw-medium">Step 5</div>
+                <p>Clean the roller with mild soap and water after each use and allow it to air dry.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5">
+            <div class="image-holder">
+              <img src="images/single-image1.png" alt="how to use Roller" class="rounded-6 img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="company-services" class="py-5">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+            <div class="icon-box text-center">
+              <div class="icon-box-icon mb-3">
+                <svg class="truck svg-secondary" width="50" height="50">
+                  <use xlink:href="#truck"></use>
+                </svg>
+                <div class="circle-pattern position-relative"></div>
+              </div>
+              <div class="icon-box-content ps-3">
+                <h4 class="fw-3 fw-bold">Quick delivery</h4>
+                <p>Inside City delivery within 5 days</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+            <div class="icon-box text-center">
+              <div class="icon-box-icon mb-3">
+                <svg class="cart svg-secondary" width="50" height="50">
+                  <use xlink:href="#cart"></use>
+                </svg>
+                <div class="circle-pattern position-relative"></div>
+              </div>
+              <div class="icon-box-content ps-3">
+                <h4 class="fw-3 fw-bold">Pick up in store</h4>
+                <p>We have option of pick up in store</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+            <div class="icon-box text-center">
+              <div class="icon-box-icon mb-3">
+                <svg class="package svg-secondary" width="45" height="45">
+                  <use xlink:href="#package"></use>
+                </svg>
+                <div class="circle-pattern position-relative"></div>
+              </div>
+              <div class="icon-box-content ps-3">
+                <h4 class="fw-3 fw-bold">Special Packaging</h4>
+                <p>Our packaging is best for products </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+            <div class="icon-box text-center">
+              <div class="icon-box-icon mb-3">
+                <svg class="return svg-secondary" width="40" height="40">
+                  <use xlink:href="#return"></use>
+                </svg>
+                <div class="circle-pattern position-relative"></div>
+              </div>
+              <div class="icon-box-content ps-3">
+                <h4 class="fw-3 fw-bold">Return policy</h4>
+                <p>We will take return in some cases</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    --->
+    <section id="product-detail" class="single-product py-lg-6">
+      <div class="container-lg">
+        <div class="row g-0">
+          <div class="col-lg-6 col-md-12">
+            <div class="image-holder">
+              <img src="images/productimg3.png" alt="product-large" class="rounded-top-left rounded-bottom-left">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 bg-secondary rounded-top-right rounded-bottom-right">
+            <div class="product-info py-lg-6 px-5">
+              <div class="display-header">
+                <h2 itemprop="name" class="display-5">Unlock The Secrets Of Radiant Skin</h2>
+                <p>Order your Aloe Vera Skincare Soap today and begin your journey to healthier, glowing skin!</p>
+              </div>
+              <div class="product-action mt-4">
+                <div class="detail-list mt-3">
+                  <ul class="text-light list-unstyled mb-0">
+                    <li class="pb-3 text-dark"> <a href="#">Orgenicabelle Soap</a>
+                    </li>
+                   <!-- <li class="pb-3 text-dark"> Price: <a href="#">$2000.00</a>-->
+                    </li>
+
+                    <!--
+                    <li class="color-product-options pb-3">
+                      <div class="color-toggle d-flex" data-option-index="0">
+                        <div class="text-dark">Choose Color:</div>
+                        <div class="color-item ms-2 d-inline-block" data-val="Cement" title="Iguana Green">
+                          <span class="color-inner d-block rounded-pill" style="background-color: #ABAA6C"></span>
+                        </div>
+                        <div class="color-item ms-2 d-inline-block" data-val="Reddish Brown" title="Orange Salmon">
+                          <span class="color-inner d-block rounded-pill" style="background-color: #CE7847"></span>
+                        </div>
+                        <div class="color-item ms-2 d-inline-block" data-val="Woody Brown" title="Storm Dust">
+                          <span class="color-inner d-block rounded-pill" style="background-color: #696666"></span>
+                        </div>
+                      </div>
+                    </li>
+                  -->
+                  </ul>
+                </div>
+                <!--
+                <div class="product-quantity">
+                  <div class="text-dark mb-3">Quantity:</div>
+                  <div class="input-group product-qty me-3 border rounded-1" style="max-width: 130px;">
+                    <span class="input-group-btn bg-gray-1">
+                      <button type="button" class="quantity-left-minus btn btn-number" data-type="minus" data-field="">
+                        <svg width="16" height="16">
+                          <use xlink:href="#minus"></use>
+                        </svg>
+                      </button>
+                    </span>
+                    <input type="text" id="quantity" name="quantity" class="form-control input-number text-center bg-transparent" value="1" min="1" max="100">
+                    <span class="input-group-btn">
+                      <button type="button" class="quantity-right-plus btn btn-number" data-type="plus" data-field="">
+                        <svg width="16" height="16">
+                          <use xlink:href="#plus"></use>
+                        </svg>
+                      </button>
+                    </span>
+                  </div>
+
+                -->
+                  <a href="shop.html" class="btn btn-lg btn-outline-dark btn-bg-primary text-uppercase mt-5 rounded-pill">
+                    <span class="text-uppercase">WhatsApp Now</span>
+                    <svg class="arrow-right" width="20" height="20">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="subscribe" class="py-lg-6">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6">
+            <div class="subscribe-content">
+              <div class="subscribe-header text-center">
+                <h2 class="display-4">Subscribe us</h2>
+                <p>Subscribe to our newsletter for discounts and updates.</p>
+              </div>
+              <form id="form" class="py-5 position-relative">
+                <input type="text" name="email" placeholder="Write your email address here..." class="w-100 bg-transparent border-0 border-bottom pb-3">
+                <svg class="send position-absolute svg-secondary" width="54" height="54">
+                  <use xlink:href="#send"></use>
+                </svg>
+              </form>
+              <div class="social-links">
+                <ul class="list-unstyled d-flex flex-wrap gap-3 justify-content-center">
+                  <li class="border rounded-pill p-2">
+                    <a href="#">
+                      <svg width="25" height="25" viewBox="0 0 24 24" class="svg-secondary">
+                        <use xlink:href="#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="border rounded-pill p-2">
+                    <a href="#">
+                      <svg width="25" height="25" viewBox="0 0 24 24" class="svg-secondary">
+                        <use xlink:href="#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="border rounded-pill p-2">
+                    <a href="#">
+                      <svg width="25" height="25" viewBox="0 0 24 24" class="svg-secondary">
+                        <use xlink:href="#youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="border rounded-pill p-2">
+                    <a href="#">
+                      <svg width="25" height="25" viewBox="0 0 24 24" class="svg-secondary">
+                        <use xlink:href="#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="border rounded-pill p-2">
+                    <a href="#">
+                      <svg width="25" height="25" viewBox="0 0 24 24" class="svg-secondary">
+                        <use xlink:href="#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="contact" class="py-lg-6">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6">
+            <div class="contact-content">
+              <div class="contact-header text-center">
+                <h2 class="display-4">Contact Us</h2>
+                <p>Stay connected with us through the details below</p>
+              </div>
+              <div class="contact-details py-5 text-center">
+                <p><strong>Address:</strong>  Ward 27, Musahari, Near Govt Qtrs, Muzaffarpur, Bihar - 842001</p>
+                <p><strong>Phone:</strong> +91-7007983928</p>
+                <p><strong>Email:</strong> orgnica2022@outlook.com</p>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="instagram" class="py-lg-7">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-2 col-md-6 mb-3">
+            <img src="images/insta-item1.jpg" alt="instagram" class="rounded-3 img-fluid">
+          </div>
+          <div class="col-lg-2 col-md-6 mb-3">
+            <img src="images/insta-item2.jpg" alt="instagram" class="rounded-3 img-fluid">
+          </div>
+          <div class="col-lg-2 col-md-6 mb-3">
+            <img src="images/insta-item3.jpg" alt="instagram" class="rounded-3 img-fluid">
+          </div>
+          <div class="col-lg-2 col-md-6 mb-3">
+            <img src="images/insta-item4.jpg" alt="instagram" class="rounded-3 img-fluid">
+          </div>
+          <div class="col-lg-2 col-md-6 mb-3">
+            <img src="images/insta-item5.jpg" alt="instagram" class="rounded-3 img-fluid">
+          </div>
+          <div class="col-lg-2 col-md-6 mb-3">
+            <img src="images/insta-item6.jpg" alt="instagram" class="rounded-3 img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="py-2 border-top">
+      <div class="text-center">
+        <p>© 2025 Orgenicabelle. Designed By <a href="https://snipthink.org/" class="text-decoration-underline"> SnipThinK</a>
+        </p>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
